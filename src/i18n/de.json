@@ -17,5 +17,9 @@
     "about": "Über Mich",
     "contact": "Kontakt",
     "project": "Projekte"
+  },
+  "my-links": {
+    "title": "Meine Links",
+    "coffee": "Spende mir gerne ein Kaffee! :D"
   }
 }

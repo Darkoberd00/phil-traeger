@@ -1,0 +1,43 @@
+<script setup lang="ts">
+  import {useI18n} from "vue-i18n";
+  const { t } = useI18n()
+</script>
+<template>
+  <div class="card bg-base-300 sm:w-[24rem]">
+    <div class="card-body">
+      <div class="card-title">{{ t('my-links.title') }}</div>
+      <ul>
+        <li>
+          <a>
+            <v-icon name="bi-github"/>
+            <a class="link" href="https://github.com/Darkoberd00" >Github</a>
+          </a>
+        </li>
+        <li>
+          <a>
+            <v-icon name="bi-twitter"/>
+            <a class="link" href="https://twitter.com/darkoberd00" >Twitter</a>
+          </a>
+        </li>
+        <li>
+          <a>
+            <v-icon name="bi-linkedin"/>
+            <a class="link" href="https://www.linkedin.com/in/phil-träger-60528a200/">Linkedin</a>
+          </a>
+        </li>
+        <li>
+          <a>
+            <v-icon name="bi-instagram"/>
+            <a class="link" href="https://www.instagram.com/phil_t_2610/">Instagram</a>
+          </a>
+        </li>
+        <li>
+          <a>
+            <v-icon name="co-ko-fi"/>
+            <a class="link" href="https://ko-fi.com/darkoberd00">{{ t('my-links.coffee') }}</a>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</template>
