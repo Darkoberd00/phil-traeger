@@ -50,6 +50,8 @@ const { t } = useI18n();
                     <li><v-icon name="vi-file-type-css"/> CSS </li>
                     <li><v-icon name="vi-file-type-apache"/> Apache </li>
                     <li><v-icon name="vi-file-type-cpp3"/> C++ </li>
+                    <li><v-icon name="bi-three-dots"/>
+                      {{ t('my_stack.more') }} </li>
                 </ul>
             </div>
         </div>

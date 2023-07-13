@@ -1,8 +1,14 @@
 {
     "hello_welt": "Hello World!",
+    "navbar": {
+        "about": "About Me",
+        "contact": "Contact",
+        "projekt": "Projekts"
+    },
     "my_stack": {
         "title": "My Experience",
-        "description": "Here is a list of programs, languages and tools\nthat I have used recently:"
+        "description": "Here is a list of programs, languages and tools\nthat I have used recently:",
+        "more": "and more!"
     },
     "about_me": {
         "title": "About Me",
