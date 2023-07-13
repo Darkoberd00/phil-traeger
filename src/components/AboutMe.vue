@@ -20,7 +20,7 @@ function getAge(oDate: Date): number {
       <div class="max-md:space-y-2 md:flex md:space-x-5">
         <div>
           <div class="avatar">
-            <div class="w-32 rounded">
+            <div class="w-40 rounded">
               <img src="@/assets/image/profile.jpg" alt="profile" />
             </div>
           </div>
