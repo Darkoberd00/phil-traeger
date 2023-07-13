@@ -1,21 +1,21 @@
 {
-    "hello_welt": "Hello World!",
-    "navbar": {
-        "about": "About Me",
-        "contact": "Contact",
-        "projekt": "Projekts"
-    },
-    "my_stack": {
-        "title": "My Experience",
-        "description": "Here is a list of programs, languages and tools\nthat I have used recently:",
-        "more": "and more!"
-    },
-    "about_me": {
-        "title": "About Me",
-        "age": "Age: {age}",
-        "life": "Life in: Germany",
-        "intro": "hi my name is {name}!",
-        "description": "When I was 7, I realized that I could handle computers. When I was 14 I started programming with a small laptop and got my first programming experience. I did an internship a year later, where I learned how to get involved in team projects, how to solve problems and how to understand them. After school, I continued my education in this field with an apprenticeship as an information technology assistant and finally decided to pursue a career as a software developer. I then decided to start a dual study program as a mathematical technical software developer to get to know the field from a more theoretical and at the same time practical point of view.",
-        "today": "In training: Institute for High Frequency Technology RWTH Aachen, Mathematical-Technical Software Engineer (MATSE)."
-    }
+  "about_me": {
+    "age": "Age: {age}",
+    "description": "When I was 7, I realized that I could handle computers. When I was 14 I started programming with a small laptop and got my first programming experience. I did an internship a year later, where I learned how to get involved in team projects, how to solve problems and how to understand them. After school, I continued my education in this field with an apprenticeship as an information technology assistant and finally decided to pursue a career as a software developer. I then decided to start a dual study program as a mathematical technical software developer to get to know the field from a more theoretical and at the same time practical point of view.",
+    "intro": "hi my name is {name}!",
+    "life": "Life in: Germany",
+    "title": "About Me",
+    "today": "In training: Institute for High Frequency Technology RWTH Aachen, Mathematical-Technical Software Engineer (MATSE)."
+  },
+  "hello_welt": "Hello World!",
+  "my_stack": {
+    "description": "Here is a list of programs, languages and tools\nthat I have used recently:",
+    "more": "and more!",
+    "title": "My Experience"
+  },
+  "navbar": {
+    "about": "About Me",
+    "contact": "Contact",
+    "project": "Projects"
+  }
 }
