@@ -1,8 +1,9 @@
 {
   "about_me": {
     "age": "Age: {age}",
+    "birthday": "Today is my birthday!",
     "description": "When I was 7, I realized that I could handle computers. When I was 14 I started programming with a small laptop and got my first programming experience. I did an internship a year later, where I learned how to get involved in team projects, how to solve problems and how to understand them. After school, I continued my education in this field with an apprenticeship as an information technology assistant and finally decided to pursue a career as a software developer. I then decided to start a dual study program as a mathematical technical software developer to get to know the field from a more theoretical and at the same time practical point of view.",
-    "intro": "hi my name is {name}!",
+    "intro": "Hi my name is {name}!",
     "life": "Life in: Germany",
     "title": "About Me",
     "today": "In training: Institute for High Frequency Technology RWTH Aachen, Mathematical-Technical Software Engineer (MATSE)."

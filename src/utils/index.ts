@@ -43,7 +43,8 @@ import {
   BiTwitter,
   BiInstagram,
   BiLinkedin,
-  CoKoFi
+  CoKoFi,
+  FaBirthdayCake
 } from 'oh-vue-icons/icons'
 export {
   ViFileTypeAccess,
@@ -90,5 +91,6 @@ export {
   BiTwitter,
   BiInstagram,
   BiLinkedin,
-  CoKoFi
+  CoKoFi,
+  FaBirthdayCake
 }

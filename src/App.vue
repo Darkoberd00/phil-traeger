@@ -12,5 +12,3 @@ import NavBar from '@/components/NavBar.vue'
     <RouterView />
   </div>
 </template>
-
-<style scoped></style>
