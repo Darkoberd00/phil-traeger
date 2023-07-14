@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
+
 const name = 'Phil Träger'
 const birthday = new Date(2000, 9, 26)
 const age = getAge(birthday)
@@ -21,7 +22,7 @@ function getAge(oDate: Date): number {
         <div>
           <div class="avatar">
             <div class="w-40 rounded">
-              <img src="@/assets/image/profile.jpg" alt="profile" />
+              <img src="../../assets/image/profile.jpg" alt="profile" />
             </div>
           </div>
         </div>

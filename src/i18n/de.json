@@ -8,6 +8,13 @@
     "today": "In Ausbildung: Institut für Hochfrequenztechnik RWTH Aachen, Mathematisch-technischer Softwareentwickler (MATSE)"
   },
   "hello_welt": "Hallo Welt!",
+  "my-contact": {
+    "title": "Meine Kontakt Liste"
+  },
+  "my-links": {
+    "title": "Meine Links",
+    "coffee": "Spende mir gerne ein Kaffee! :D"
+  },
   "my_stack": {
     "description": "Hier ist eine liste von Programme, Sprachen und Tools.\nMit den ich in der letzter Zeit erfahrungen gesammelt habe:",
     "more": "und mehr!",
@@ -17,9 +24,5 @@
     "about": "Über Mich",
     "contact": "Kontakt",
     "project": "Projekte"
-  },
-  "my-links": {
-    "title": "Meine Links",
-    "coffee": "Spende mir gerne ein Kaffee! :D"
   }
 }

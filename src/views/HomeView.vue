@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import MyStack from '@/components/MyStack.vue'
-import AboutMe from '@/components/AboutMe.vue'
-import MyLinks from "@/components/MyLinks.vue";
+import MyStack from '@/components/home/MyStack.vue'
+import AboutMe from '@/components/home/AboutMe.vue'
+import MyLinks from '@/components/home/MyLinks.vue'
 </script>
 
 <template>
@@ -22,9 +22,6 @@ import MyLinks from "@/components/MyLinks.vue";
           <MyStack />
         </div>
       </div>
-
-
     </div>
   </div>
 </template>
-
