@@ -1,6 +1,6 @@
 import './assets/main.css'
 
-import { createApp, ref } from 'vue'
+import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
 import { createI18n } from 'vue-i18n'
@@ -13,36 +13,36 @@ import * as Icons from '@/utils'
 
 import App from './App.vue'
 import router from './router'
+import type { IconType } from 'oh-vue-icons/types/icons'
 
 const app = createApp(App)
 app.use(createPinia())
 
-const i18n = ref(
-  createI18n<[MessageSchema], 'en-US' | 'de-DE'>({
-    legacy: false,
-    locale: 'de-DE',
-    messages: {
-      'en-US': en,
-      'de-DE': de
-    }
-  })
-)
+const i18n = createI18n<[MessageSchema], 'en-US' | 'de-DE'>({
+  legacy: false,
+  locale: 'de-DE',
+  messages: {
+    'en-US': en,
+    'de-DE': de
+  }
+})
 
-// TODO: fix me
+app.use(i18n)
+
+const locale: any = i18n.global.locale
 export function setLang(lang: string) {
   if (lang === 'en-US' || lang === 'de-DE') {
-    i18n.value.global.locale = lang
+    locale.value = lang
   } else {
-    i18n.value.global.locale = 'de-DE'
+    locale.value = 'de-DE'
   }
 }
 
-const Vi = Object.values({ ...Icons })
+const Vi: IconType[] = Object.values({ ...Icons })
 
 addIcons(...Vi)
 
 app.component('v-icon', OhVueIcon)
-app.use(i18n.value)
 
 app.use(router)
 
