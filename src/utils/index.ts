@@ -44,7 +44,15 @@ import {
   BiInstagram,
   BiLinkedin,
   CoKoFi,
-  FaBirthdayCake
+  FaBirthdayCake,
+  MdEmailOutlined,
+  BiTelegram,
+  BiDiscord,
+  IoGitNetwork,
+  BiStar,
+  OiEye,
+  OiPeople,
+  OiRepo
 } from 'oh-vue-icons/icons'
 export {
   ViFileTypeAccess,
@@ -92,5 +100,13 @@ export {
   BiInstagram,
   BiLinkedin,
   CoKoFi,
-  FaBirthdayCake
+  FaBirthdayCake,
+  MdEmailOutlined,
+  BiTelegram,
+  BiDiscord,
+  IoGitNetwork,
+  BiStar,
+  OiEye,
+  OiPeople,
+  OiRepo
 }

@@ -8,15 +8,26 @@
     "title": "About Me",
     "today": "In training: Institute for High Frequency Technology RWTH Aachen, Mathematical-Technical Software Engineer (MATSE)."
   },
+  "function": {
+    "add-to-clipboard": "The text: '{text}' was saved in the clipboard!"
+  },
   "hello_welt": "Hello World!",
   "my-contact": {
     "title": "My contact list"
+  },
+  "my-github": {
+    "title": "My Github"
   },
   "my-links": {
     "title": "My Links",
     "coffee": "Donate me a coffee with pleasure! :D"
   },
-  "my_stack": {
+  "my-repo-github": {
+    "forks": "Number of forks",
+    "stars": "Number of stars",
+    "watchers": "Number of watchers"
+  },
+  "my-stack": {
     "description": "Here is a list of programs, languages and tools\nthat I have used recently:",
     "more": "and more!",
     "title": "My Experience"

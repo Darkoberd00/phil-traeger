@@ -8,15 +8,26 @@
     "title": "Über Mich",
     "today": "In Ausbildung: Institut für Hochfrequenztechnik RWTH Aachen, Mathematisch-technischer Softwareentwickler (MATSE)"
   },
+  "function": {
+    "add-to-clipboard": "Der Text: '{text}' wurde im Clipboard gespeichert!"
+  },
   "hello_welt": "Hallo Welt!",
   "my-contact": {
     "title": "Meine Kontakt Liste"
+  },
+  "my-github": {
+    "title": "Mein Github"
   },
   "my-links": {
     "title": "Meine Links",
     "coffee": "Spende mir gerne ein Kaffee! :D"
   },
-  "my_stack": {
+  "my-repo-github": {
+    "forks": "Anzahl der Forks",
+    "stars": "Anzahl der Stars",
+    "watchers": "Anzahl der Watchers"
+  },
+  "my-stack": {
     "description": "Hier ist eine liste von Programme, Sprachen und Tools.\nMit den ich in der letzter Zeit erfahrungen gesammelt habe:",
     "more": "und mehr!",
     "title": "Meine Erfahrungen"

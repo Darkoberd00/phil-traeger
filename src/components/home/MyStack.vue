@@ -6,8 +6,8 @@ const { t } = useI18n()
 <template>
   <div class="card bg-base-300 shadow-xl sm:w-[24rem]">
     <div class="card-body">
-      <h2 class="card-title">{{ t('my_stack.title') }}</h2>
-      <p>{{ t('my_stack.description') }}</p>
+      <h2 class="card-title">{{ t('my-stack.title') }}</h2>
+      <p>{{ t('my-stack.description') }}</p>
       <div class="mx-auto pt-4 sm:flex sm:space-x-5">
         <ul class="list-none">
           <li><v-icon name="vi-file-type-access" /> Microsoft Access</li>
@@ -49,7 +49,7 @@ const { t } = useI18n()
           <li><v-icon name="vi-file-type-css" /> CSS</li>
           <li><v-icon name="vi-file-type-apache" /> Apache</li>
           <li><v-icon name="vi-file-type-cpp3" /> C++</li>
-          <li><v-icon name="bi-three-dots" /> {{ t('my_stack.more') }}</li>
+          <li><v-icon name="bi-three-dots" /> {{ t('my-stack.more') }}</li>
         </ul>
       </div>
     </div>

@@ -39,7 +39,7 @@ function toggle(): void {
               }}</RouterLink>
             </li>
             <li>
-              <RouterLink to="/projekt" exactActiveClass="active">{{
+              <RouterLink to="/project" exactActiveClass="active">{{
                 t('navbar.project')
               }}</RouterLink>
             </li>

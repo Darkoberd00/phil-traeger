@@ -4,7 +4,7 @@ import MyContact from '@/components/contact/MyContact.vue'
 </script>
 
 <template>
-  <div class="mt-4 flex max-lg:mx-4 lg:w-full">
+  <div class="sm-max:px-4 mt-4 flex lg:w-full">
     <div class="mx-auto">
       <div class="max-md:space-y-4 md:flex md:space-x-4">
         <MyContact />
