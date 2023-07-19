@@ -8,5 +8,3 @@ services:
     container_name: phil-traeger_web
     expose:
       - 3000
-
-

@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: 'http://dummtrottel.de:3000/',
+  base: 'https://phil-traeger.dev/',
   plugins: [
     vue(),
   ],
