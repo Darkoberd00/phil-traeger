@@ -27,7 +27,7 @@ function isMyBirthdayToday() {
         <div>
           <div class="avatar">
             <div class="w-52 rounded">
-              <img src="@/assets/image/profile.jpg" alt="profile" />
+              <img src="@/assets/image/profile.jpeg" alt="profile" />
             </div>
           </div>
         </div>

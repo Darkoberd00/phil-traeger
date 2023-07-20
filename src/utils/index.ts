@@ -52,7 +52,8 @@ import {
   BiStar,
   OiEye,
   OiPeople,
-  OiRepo
+  OiRepo,
+  OiDotFill
 } from 'oh-vue-icons/icons'
 export {
   ViFileTypeAccess,
@@ -108,5 +109,6 @@ export {
   BiStar,
   OiEye,
   OiPeople,
-  OiRepo
+  OiRepo,
+  OiDotFill
 }

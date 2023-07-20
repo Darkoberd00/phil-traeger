@@ -36,5 +36,9 @@
     "about": "Über Mich",
     "contact": "Kontakt",
     "project": "Projekte"
+  },
+  "footer": {
+    "imprint": "Impressum",
+    "data-protection": "Datenschutzerklärung"
   }
 }

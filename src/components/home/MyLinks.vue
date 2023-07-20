@@ -8,34 +8,34 @@ const { t } = useI18n()
       <div class="card-title">{{ t('my-links.title') }}</div>
       <ul>
         <li>
-          <a>
-            <v-icon name="bi-github" />
+          <div class="space-x-1">
+            <v-icon name="bi-github"/>
             <a class="link" href="https://github.com/Darkoberd00">Github</a>
-          </a>
+          </div>
         </li>
         <li>
-          <a>
+          <div class="space-x-1">
             <v-icon name="bi-twitter" />
             <a class="link" href="https://twitter.com/darkoberd00">Twitter</a>
-          </a>
+          </div>
         </li>
         <li>
-          <a>
+          <div class="space-x-1">
             <v-icon name="bi-linkedin" />
             <a class="link" href="https://www.linkedin.com/in/phil-träger-60528a200/">Linkedin</a>
-          </a>
+          </div>
         </li>
         <li>
-          <a>
+          <div class="space-x-1">
             <v-icon name="bi-instagram" />
             <a class="link" href="https://www.instagram.com/phil_t_2610/">Instagram</a>
-          </a>
+          </div>
         </li>
         <li>
-          <a>
+          <div class="space-x-1">
             <v-icon name="co-ko-fi" />
             <a class="link" href="https://ko-fi.com/darkoberd00">{{ t('my-links.coffee') }}</a>
-          </a>
+          </div>
         </li>
       </ul>
     </div>

@@ -47,30 +47,30 @@ function toggle(): void {
         </div>
       </div>
       <div class="navbar-center">
-        <a @click="toggle" v-if="!showEevee" class="btn-ghost btn text-xl normal-case">
+        <div @click="toggle" v-if="!showEevee" class="btn-ghost btn text-xl normal-case">
           <div>Phil Träger</div>
-        </a>
-        <a @click="toggle" v-else class="btn-ghost btn text-xl normal-case">
+        </div>
+        <div @click="toggle" v-else class="btn-ghost btn text-xl normal-case">
           <v-icon name="pi-eevee" scale="2" />
-        </a>
+        </div>
       </div>
       <div class="navbar-end">
-        <a @click="changeLang" class="btn-ghost btn">
+        <div @click="changeLang" class="btn-ghost btn">
           <div>
             <img
               v-if="isDE()"
-              class="w-10 rounded"
+              class="h-fit w-10 rounded"
               src="@/assets/image/Flag_of_Germany.svg"
               alt="de"
             />
             <img
               v-else
-              class="w-10 rounded"
+              class="h-fit w-10 rounded"
               src="@/assets/image/Flag_of_the_United_States.svg"
               alt="us"
             />
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
