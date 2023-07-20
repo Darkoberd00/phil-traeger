@@ -14,7 +14,7 @@ const { t } = useI18n()
       <div class="card-title">
         <v-icon name="bi-github" /><a class="link" v-bind:href="repo.html_url">{{ repo.name }}</a>
       </div>
-      <a>{{ repo.description }}</a>
+      <p>{{ repo.description }}</p>
     </div>
     <div class="mx-8 my-3">
       <div class="flex space-x-4">

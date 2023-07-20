@@ -9,7 +9,7 @@ const { t } = useI18n()
   <div class="card bg-base-300 shadow-xl sm:w-[24rem]">
     <div class="card-body">
       <div class="card-title">{{ t('my-contact.title') }}</div>
-      <ul>
+      <ul class="space-y-2">
         <li class="space-x-1">
           <v-icon name="md-email-outlined" /><a class="link" href="mailto:phil@traeger-welt.de"
             >phil@traeger-welt.de</a

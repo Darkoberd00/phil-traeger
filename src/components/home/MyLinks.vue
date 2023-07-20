@@ -6,7 +6,7 @@ const { t } = useI18n()
   <div class="card bg-base-300 shadow-xl sm:w-[24rem]">
     <div class="card-body">
       <div class="card-title">{{ t('my-links.title') }}</div>
-      <ul>
+      <ul class="space-y-2">
         <li>
           <div class="space-x-1">
             <v-icon name="bi-github"/>
