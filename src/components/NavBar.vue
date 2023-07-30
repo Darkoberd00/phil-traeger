@@ -60,14 +60,14 @@ function toggle(): void {
             <img
               v-if="isDE()"
               class="h-fit w-10 rounded"
-              src="@/assets/image/Flag_of_Germany.svg"
-              alt="de"
+              src="@/assets/image/Flag_of_the_United_States.svg"
+              alt="us"
             />
             <img
               v-else
               class="h-fit w-10 rounded"
-              src="@/assets/image/Flag_of_the_United_States.svg"
-              alt="us"
+              src="@/assets/image/Flag_of_Germany.svg"
+              alt="de"
             />
           </div>
         </div>

@@ -9,46 +9,87 @@ const { t } = useI18n()
       <h2 class="card-title">{{ t('my-stack.title') }}</h2>
       <p>{{ t('my-stack.description') }}</p>
       <div class="mx-auto pt-4 sm:flex sm:space-x-5">
-        <ul class="list-none">
-          <li><v-icon name="vi-file-type-access" /> Microsoft Access</li>
-          <li><v-icon name="vi-file-type-arduino" /> Arduino</li>
-          <li><v-icon name="vi-file-type-eslint" /> Eslint</li>
-          <li><v-icon name="vi-file-type-excel" /> Microsoft Excel</li>
-          <li><v-icon name="vi-file-type-git" /> Git</li>
-          <li><v-icon name="vi-file-type-gradle" /> Gradle</li>
-          <li><v-icon name="vi-file-type-html" /> HTML</li>
-          <li><v-icon name="vi-file-type-jar" /> Java</li>
-          <li><v-icon name="vi-file-type-js-official" color="black" /> JavaScript</li>
-          <li><v-icon name="vi-file-type-json" /> Json</li>
-          <li><v-icon name="vi-file-type-jupyter" /> Jupyter Notebooks</li>
-          <li><v-icon name="vi-file-type-kotlin" /> Kotlin</li>
-          <li><v-icon name="vi-file-type-prettier" /> Prettier</li>
-          <li><v-icon name="vi-file-type-tex" /> LaTeX</li>
-          <li><v-icon name="vi-file-type-markdown" /> Markdown</li>
-          <li><v-icon name="vi-file-type-maven" /> Maven</li>
-          <li><v-icon name="vi-file-type-mysql" /> MySQL</li>
-          <li><v-icon name="vi-file-type-node" /> NodeJs</li>
-          <li><v-icon name="vi-file-type-npm" /> npm</li>
+        <ul class="list-none space-y-2">
+          <li>
+            <v-icon name="vi-file-type-arduino" />
+            <a href="https://www.arduino.cc" class="hover:link">Arduino</a>
+          </li>
+          <li>
+            <v-icon name="vi-file-type-git" />
+            <a href="https://git-scm.com" class="hover:link">Git</a>
+          </li>
+          <li>
+            <v-icon name="vi-file-type-gradle" class="rounded bg-black dark:bg-base-300" />
+            <a href="https://gradle.org" class="hover:link">Gradle</a>
+          </li>
+          <li>
+            <v-icon name="vi-file-type-jar" />
+            <a href="https://www.java.com/de/" class="hover:link">Java</a>
+          </li>
+          <li>
+            <v-icon name="vi-file-type-jupyter" />
+            <a href="https://jupyter.org" class="hover:link">Jupyter Notebooks</a>
+          </li>
+          <li>
+            <v-icon name="vi-file-type-kotlin" />
+            <a href="https://kotlinlang.org" class="hover:link">Kotlin</a>
+          </li>
+          <li>
+            <v-icon name="vi-file-type-tex" class="rounded bg-black dark:bg-base-300" />
+            <a href="https://www.latex-project.org" class="hover:link">LaTeX</a>
+          </li>
+          <li>
+            <v-icon name="vi-file-type-maven" />
+            <a href="https://maven.apache.org" class="hover:link">Maven</a>
+          </li>
+          <li>
+            <v-icon name="vi-file-type-mysql" />
+            <a href="https://www.mysql.com/de/" class="hover:link">MySQL</a>
+          </li>
+          <li>
+            <v-icon name="vi-file-type-cpp3" />
+            <a href="https://isocpp.org" class="hover:link">C++</a>
+          </li>
         </ul>
-        <ul class="list-none">
-          <li><v-icon name="vi-file-type-nuxt" /> Nuxt</li>
-          <li><v-icon name="vi-file-type-outlook" /> Outlook</li>
-          <li><v-icon name="vi-file-type-pgsql" /> PostgreSQL</li>
-          <li><v-icon name="vi-file-type-php" /> Php</li>
-          <li><v-icon name="vi-file-type-powerpoint" /> Powerpoint</li>
-          <li><v-icon name="vi-file-type-powershell" /> Powershell</li>
-          <li><v-icon name="vi-file-type-python" /> Python</li>
-          <li><v-icon name="vi-file-type-photoshop" /> Photoshop</li>
-          <li><v-icon name="vi-file-type-typescript-official" /> TypeScript</li>
-          <li><v-icon name="vi-file-type-typo3" /> Typo3</li>
-          <li><v-icon name="vi-file-type-vite" /> Vite</li>
-          <li><v-icon name="vi-file-type-vitest" /> Vitest</li>
-          <li><v-icon name="vi-file-type-vscode" /> VSCode</li>
-          <li><v-icon name="vi-file-type-vue" /> Vue</li>
-          <li><v-icon name="vi-file-type-word" /> Word</li>
-          <li><v-icon name="vi-file-type-css" /> CSS</li>
-          <li><v-icon name="vi-file-type-apache" /> Apache</li>
-          <li><v-icon name="vi-file-type-cpp3" /> C++</li>
+        <ul class="list-none space-y-2 max-sm:mt-2">
+          <li>
+            <v-icon name="vi-file-type-nuxt" />
+            <a href="https://nuxt.com" class="hover:link">Nuxt</a>
+          </li>
+          <li>
+            <v-icon name="vi-file-type-pgsql" />
+            <a href="https://www.postgresql.org" class="hover:link">PostgreSQL</a>
+          </li>
+          <li>
+            <v-icon name="vi-file-type-php" />
+            <a href="https://www.php.net" class="hover:link">Php</a>
+          </li>
+          <li>
+            <v-icon name="vi-file-type-python" />
+            <a href="https://www.python.org" class="hover:link">Python</a>
+          </li>
+          <li>
+            <v-icon name="vi-file-type-photoshop" />
+            <a href="https://www.adobe.com/de/products/photoshop.html" class="hover:link"
+              >Photoshop</a
+            >
+          </li>
+          <li>
+            <v-icon name="vi-file-type-typescript-official" />
+            <a href="https://www.typescriptlang.org" class="hover:link">TypeScript</a>
+          </li>
+          <li>
+            <v-icon name="vi-file-type-typo3" />
+            <a href="https://typo3.org" class="hover:link">Typo3</a>
+          </li>
+          <li>
+            <v-icon name="vi-file-type-vue" />
+            <a href="https://vuejs.org" class="hover:link">Vue</a>
+          </li>
+          <li>
+            <v-icon name="vi-file-type-apache" />
+            <a href="https://httpd.apache.org" class="hover:link">Apache</a>
+          </li>
           <li><v-icon name="bi-three-dots" /> {{ t('my-stack.more') }}</li>
         </ul>
       </div>

@@ -11,23 +11,25 @@ const { t } = useI18n()
       <div class="card-title">{{ t('my-contact.title') }}</div>
       <ul class="space-y-2">
         <li class="space-x-1">
-          <v-icon name="md-email-outlined" /><a class="link" href="mailto:phil@traeger-welt.de"
+          <v-icon name="md-email-outlined" /><a
+            class="hover:link"
+            href="mailto:phil@traeger-welt.de"
             >phil@traeger-welt.de</a
           >
         </li>
         <li class="space-x-1">
-          <v-icon name="bi-telegram" /><a class="link" href="https://t.me/Darkoberd00"
+          <v-icon name="bi-telegram" /><a class="hover:link" href="https://t.me/Darkoberd00"
             >@Darkoberd00</a
           >
         </li>
         <li class="space-x-1">
           <v-icon name="bi-discord" />
-          <a
-            class="link"
+          <span
+            class="hover:link"
             @click="
               addToClipboard('darkoberd00', t('function.add-to-clipboard', { text: 'darkoberd00' }))
             "
-            >darkoberd00</a
+            >darkoberd00</span
           >
         </li>
       </ul>

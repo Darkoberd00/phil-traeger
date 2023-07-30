@@ -12,7 +12,9 @@ const { t } = useI18n()
   <div class="card bg-base-300 shadow-xl lg:h-full lg:w-[25rem]">
     <div class="card-body">
       <div class="card-title">
-        <v-icon name="bi-github" /><a class="link" v-bind:href="repo.html_url">{{ repo.name }}</a>
+        <v-icon name="bi-github" /><a class="hover:link" v-bind:href="repo.html_url">{{
+          repo.name
+        }}</a>
       </div>
       <p>{{ repo.description }}</p>
     </div>

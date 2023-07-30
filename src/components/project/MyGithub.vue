@@ -4,19 +4,14 @@ import { useI18n } from 'vue-i18n'
 defineProps<{
   user: User
 }>()
-
 const { t } = useI18n()
-
-function toGithub(user: User) {
-  window.open(user.html_url)
-}
 </script>
 
 <template>
   <div class="card bg-base-300 shadow-xl lg:h-full lg:w-[25rem]">
     <div class="card-body">
       <div class="card-title">{{ t('my-github.title') }}</div>
-      <div class="link-hover link flex w-fit space-x-2" @click="toGithub(user)">
+      <a class="flex w-fit space-x-2 hover:link" :href="user.html_url">
         <div class="avatar">
           <div class="w-14 rounded-full">
             <img :src="user.avatar_url" alt="Github Avatar" />
@@ -28,7 +23,7 @@ function toGithub(user: User) {
           </div>
           <span class="badge">{{ user.login }}</span>
         </div>
-      </div>
+      </a>
       <div class="flex">
         <div>
           <v-icon name="oi-repo" />

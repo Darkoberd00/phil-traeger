@@ -53,7 +53,8 @@ import {
   OiEye,
   OiPeople,
   OiRepo,
-  OiDotFill
+  OiDotFill,
+  FaKeybase
 } from 'oh-vue-icons/icons'
 export {
   ViFileTypeAccess,
@@ -110,5 +111,6 @@ export {
   OiEye,
   OiPeople,
   OiRepo,
-  OiDotFill
+  OiDotFill,
+  FaKeybase
 }
