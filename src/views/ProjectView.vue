@@ -3,6 +3,9 @@ import { getGithubProfile, getRepos } from '@/api'
 import MyRepoGithub from '@/components/project/MyRepoGithub.vue'
 import type { Repo } from '@/types/github'
 import MyGithub from '@/components/project/MyGithub.vue'
+import ARShowcase from "@/components/project/amazing-roulette/ARShowcase.vue";
+import MyProjects from "@/components/project/MyProjects.vue";
+import PTShowcase from "@/components/project/phil-traeger/PTShowcase.vue";
 
 const user = import.meta.env.VITE_GITHUB_USER
 const repoList = await getRepos(user)
@@ -17,6 +20,24 @@ repoList.forEach((repo) => {
 </script>
 
 <template>
+  <div class="mt-4 flex">
+    <div class="mx-auto">
+      <MyProjects></MyProjects>
+    </div>
+  </div>
+
+  <div class="mt-4 flex">
+    <div class="mx-auto">
+      <ARShowcase></ARShowcase>
+    </div>
+  </div>
+
+  <div class="mt-4 flex">
+    <div class="mx-auto">
+      <PTShowcase></PTShowcase>
+    </div>
+  </div>
+
   <div class="mt-4 flex">
     <div class="mx-auto">
       <MyGithub :user="githubUser" />

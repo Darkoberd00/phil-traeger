@@ -10,7 +10,7 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <div class="card bg-base-300 shadow-xl lg:h-full lg:w-[25rem]">
+  <div class="card bg-base-300 shadow-xl lg:h-full lg:w-[24rem]">
     <div class="card-body">
       <div class="card-title">
         <v-icon name="bi-github" /><a class="hover:link" v-bind:href="repo.html_url"

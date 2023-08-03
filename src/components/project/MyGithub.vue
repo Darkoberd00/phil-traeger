@@ -8,7 +8,7 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <div class="card bg-base-300 shadow-xl lg:h-full lg:w-[25rem]">
+  <div class="card bg-base-300 shadow-xl lg:h-full lg:w-[50rem]">
     <div class="card-body">
       <div class="card-title">{{ t('my-github.title') }}</div>
       <a class="flex w-fit space-x-2 hover:link" :href="user.html_url">

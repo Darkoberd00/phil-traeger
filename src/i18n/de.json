@@ -75,5 +75,16 @@
     "about": "Über Mich",
     "contact": "Kontakt",
     "project": "Projekte"
-  }
+  },
+  "project": {
+    "ar": {
+      "title": "Amazing Roulette",
+      "subtitle": "Gamified Amazon"
+    },
+    "pt": {
+      "title": "phil-traeger.dev",
+      "subtitle": "Eine Portfoliowebseite über mich"
+    }
+  },
+  "read-more": "Mehr Lesen..."
 }
