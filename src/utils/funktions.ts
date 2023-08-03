@@ -6,6 +6,14 @@ export function getIconFromLanguage(language: string): string {
       return 'vi-file-type-cpp3'
     case 'TypeScript':
       return 'vi-file-type-typescript-official'
+    case 'JavaScript':
+      return 'vi-file-type-js-official'
+    case 'Rust':
+      return 'vi-file-type-rust'
+    case 'Elixir':
+      return 'vi-file-type-elixir'
+    case 'Shell':
+      return 'vi-file-type-powershell'
     case 'Jupyter Notebook':
       return 'vi-file-type-jupyter'
   }

@@ -7,6 +7,7 @@ const { t } = useI18n()
 const { changeLang, isDE } = useLangStore()
 let showEevee = ref(false)
 let count = 0
+const name = import.meta.env.VITE_NAME
 
 function toggle(): void {
   if (count < 10) {
@@ -48,7 +49,7 @@ function toggle(): void {
       </div>
       <div class="navbar-center">
         <div @click="toggle" v-if="!showEevee" class="btn-ghost btn text-xl normal-case">
-          <div>Phil Träger</div>
+          <div>{{ name }}</div>
         </div>
         <div @click="toggle" v-else class="btn-ghost btn text-xl normal-case">
           <v-icon name="pi-eevee" scale="2" />

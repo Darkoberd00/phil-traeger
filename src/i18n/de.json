@@ -61,6 +61,7 @@
   },
   "my-repo-github": {
     "archived": "Projekt wurde Archiviert",
+    "fork": "Das Projekt ist ein fork",
     "forks": "Anzahl der Forks",
     "stars": "Anzahl der Stars",
     "watchers": "Anzahl der Watchers"

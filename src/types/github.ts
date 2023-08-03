@@ -9,6 +9,7 @@ export type Repo = {
   forks_count: number
   topics: string[]
   archived: boolean
+  fork: boolean
 }
 
 export type User = {

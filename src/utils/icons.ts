@@ -55,7 +55,9 @@ import {
   OiRepo,
   OiDotFill,
   FaKeybase,
-  BiArchiveFill
+  BiArchiveFill,
+  ViFileTypeRust,
+  ViFileTypeElixir,
 } from 'oh-vue-icons/icons'
 export {
   ViFileTypeAccess,
@@ -114,5 +116,7 @@ export {
   OiRepo,
   OiDotFill,
   FaKeybase,
-  BiArchiveFill
+  BiArchiveFill,
+  ViFileTypeRust,
+  ViFileTypeElixir,
 }

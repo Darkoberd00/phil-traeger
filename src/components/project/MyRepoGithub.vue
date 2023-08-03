@@ -15,7 +15,11 @@ const { t } = useI18n()
       <div class="card-title">
         <v-icon name="bi-github" /><a class="hover:link" v-bind:href="repo.html_url"
           >{{ repo.name }}
+        <span v-if="repo.fork" v-bind:data-tip="t('my-repo-github.fork')" class="tooltip">
+          <span class="badge badge-sm space-x-1"><v-icon name="io-git-network" scale="0.7"/> <a>Fork</a></span>
+        </span>
         </a>
+
       </div>
       <p>{{ repo.description }}</p>
     </div>
@@ -30,7 +34,7 @@ const { t } = useI18n()
         <div class="tooltip" v-bind:data-tip="t('my-repo-github.watchers')">
           <v-icon name="oi-eye" /> {{ repo.watchers_count }}
         </div>
-        <div><v-icon v-bind:name="getIconFromLanguage(repo.language)" /> {{ repo.language }}</div>
+        <div><v-icon v-bind:name="getIconFromLanguage(repo.language)" color="black"/> {{ repo.language }}</div>
         <div v-if="repo.archived" class="tooltip" v-bind:data-tip="t('my-repo-github.archived')">
           <v-icon name="bi-archive-fill" />
         </div>
