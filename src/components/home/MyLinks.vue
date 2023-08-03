@@ -22,7 +22,7 @@ const { t } = useI18n()
         <li>
           <div class="space-x-1">
             <v-icon name="bi-twitter" />
-            <a class="hover:link" href="https://twitter.com/darkoberd00">Twitter</a>
+            <a class="hover:link" href="https://twitter.com/darkoberd00">Twitter | X</a>
           </div>
         </li>
         <li>

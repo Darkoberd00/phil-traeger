@@ -1,17 +1,15 @@
 import type { Repo, User } from '@/types/github'
 
-export async function getRepos(): Promise<Repo[]> {
-  return await fetch('https://api.github.com/users/Darkoberd00/repos', {
+export async function getRepos(user: string): Promise<Repo[]> {
+  const response: Response = await fetch('https://api.github.com/users/' + user + '/repos', {
     method: 'GET'
-  }).then(async (response): Promise<Repo[]> => {
-    return response.json()
   })
+  return (await response.json()) as Repo[]
 }
 
-export async function getGithubProfile(): Promise<User> {
-  return await fetch('https://api.github.com/users/Darkoberd00', {
+export async function getGithubProfile(user: string): Promise<User> {
+  const response: Response = await fetch('https://api.github.com/users/' + user, {
     method: 'GET'
-  }).then(async (response): Promise<User> => {
-    return response.json()
   })
+  return (await response.json()) as User
 }

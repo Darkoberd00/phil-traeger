@@ -4,11 +4,12 @@ import MyRepoGithub from '@/components/project/MyRepoGithub.vue'
 import type { Repo } from '@/types/github'
 import MyGithub from '@/components/project/MyGithub.vue'
 
-const repoList = await Promise.resolve(getRepos())
-const githubUser = await Promise.resolve(getGithubProfile())
+const user = import.meta.env.VITE_GITHUB_USER
+const repoList = await getRepos(user)
+const githubUser = await getGithubProfile(user)
 let filterRepos: Repo[] = []
 repoList.forEach((repo) => {
-  if (repo.name === 'Darkoberd00' || repo.name === 'test') {
+  if (import.meta.env.VITE_NONE_SHOW_REPOS.includes(repo.name)) {
     return
   }
   filterRepos.push(repo)

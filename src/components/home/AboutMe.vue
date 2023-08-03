@@ -1,22 +1,12 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
+import { getAge, isMyBirthdayToday } from '@/utils/funktions'
+
 const { t } = useI18n()
 
-const name = 'Phil Träger'
-const birthday = new Date(2000, 9, 26)
+const name = import.meta.env.VITE_NAME
+const birthday = new Date(import.meta.env.VITE_BIRTHDAY)
 const age = getAge(birthday)
-
-function getAge(oDate: Date): number {
-  let diff_ms: number = Date.now() - oDate.getTime()
-  let age_ms: Date = new Date(diff_ms)
-  let age_years: number = age_ms.getUTCFullYear() - 1970
-  return age_years < 0 ? NaN : age_years
-}
-
-function isMyBirthdayToday() {
-  const today = new Date()
-  return birthday.getDay() === today.getDay() && birthday.getMonth() === today.getMonth()
-}
 </script>
 
 <template>
@@ -41,7 +31,7 @@ function isMyBirthdayToday() {
                     {{ t('about_me.age', { age: age }) }}
                   </div>
                   <div
-                    v-if="isMyBirthdayToday()"
+                    v-if="isMyBirthdayToday(birthday)"
                     class="tooltip"
                     v-bind:data-tip="t('about_me.birthday')"
                   >

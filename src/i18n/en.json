@@ -60,6 +60,7 @@
     "coffee": "Donate me a coffee with pleasure! :D"
   },
   "my-repo-github": {
+    "archived": "Project was archived",
     "forks": "Number of forks",
     "stars": "Number of stars",
     "watchers": "Number of watchers"

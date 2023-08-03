@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import { addToClipboard } from '@/utils/utils'
 
 const { t } = useI18n()
 </script>
@@ -23,13 +22,10 @@ const { t } = useI18n()
           >
         </li>
         <li class="space-x-1">
-          <v-icon name="bi-discord" />
-          <span
+          <v-icon name="bi-discord" /><a
             class="hover:link"
-            @click="
-              addToClipboard('darkoberd00', t('function.add-to-clipboard', { text: 'darkoberd00' }))
-            "
-            >darkoberd00</span
+            href="https://discord.com/users/213758917380014082"
+            >darkoberd00</a
           >
         </li>
       </ul>

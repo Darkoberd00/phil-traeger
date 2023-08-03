@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import type { Repo } from '@/types/github'
+import { getIconFromLanguage } from '@/utils/funktions'
 import { useI18n } from 'vue-i18n'
-import { getIconFromLanguage } from '@/utils/utils'
+
 defineProps<{
   repo: Repo
 }>()
@@ -12,9 +13,9 @@ const { t } = useI18n()
   <div class="card bg-base-300 shadow-xl lg:h-full lg:w-[25rem]">
     <div class="card-body">
       <div class="card-title">
-        <v-icon name="bi-github" /><a class="hover:link" v-bind:href="repo.html_url">{{
-          repo.name
-        }}</a>
+        <v-icon name="bi-github" /><a class="hover:link" v-bind:href="repo.html_url"
+          >{{ repo.name }}
+        </a>
       </div>
       <p>{{ repo.description }}</p>
     </div>
@@ -30,6 +31,9 @@ const { t } = useI18n()
           <v-icon name="oi-eye" /> {{ repo.watchers_count }}
         </div>
         <div><v-icon v-bind:name="getIconFromLanguage(repo.language)" /> {{ repo.language }}</div>
+        <div v-if="repo.archived" class="tooltip" v-bind:data-tip="t('my-repo-github.archived')">
+          <v-icon name="bi-archive-fill" />
+        </div>
       </div>
     </div>
   </div>

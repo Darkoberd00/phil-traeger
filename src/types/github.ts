@@ -8,6 +8,7 @@ export type Repo = {
   watchers_count: number
   forks_count: number
   topics: string[]
+  archived: boolean
 }
 
 export type User = {

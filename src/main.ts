@@ -1,18 +1,18 @@
-import './assets/main.css'
+import '@/assets/main.css'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
 import { createI18n } from 'vue-i18n'
-import type { MessageSchema } from './i18n/schema'
-import en from './i18n/en.json'
-import de from './i18n/de.json'
+import type { MessageSchema } from '@/i18n/schema'
+import en from '@/i18n/en.json'
+import de from '@/i18n/de.json'
 
 import { OhVueIcon, addIcons } from 'oh-vue-icons'
-import * as Icons from '@/utils'
+import * as Icons from '@/utils/icons'
 
-import App from './App.vue'
-import router from './router'
+import App from '@/App.vue'
+import router from '@/router'
 import type { IconType } from 'oh-vue-icons/types/icons'
 
 const app = createApp(App)
