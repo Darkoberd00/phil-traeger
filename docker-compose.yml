@@ -5,7 +5,6 @@ services:
       context: .
     ports:
       - "80:80"
-    network_mode: "host"
     container_name: phil-traeger_web
     expose:
       - 80
