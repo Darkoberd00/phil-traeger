@@ -5,12 +5,13 @@ import { ref } from 'vue'
 import { useLangStore } from '@/stores/lang'
 const { t } = useI18n()
 const { changeLang, isDE } = useLangStore()
+const name = import.meta.env.VITE_NAME
+const eevee_count = import.meta.env.VITE_EEVEE_COUNT
 let showEevee = ref(false)
 let count = 0
-const name = import.meta.env.VITE_NAME
 
 function toggle(): void {
-  if (count < 10) {
+  if (count < eevee_count) {
     count++
     return
   }
