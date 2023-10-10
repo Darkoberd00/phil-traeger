@@ -4,7 +4,7 @@ services:
     build:
       context: .
     ports:
-      - "80:80"
+      - "3000:3000"
     container_name: phil-traeger_web
     expose:
-      - 80
+      - 3000
