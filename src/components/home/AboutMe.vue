@@ -35,7 +35,7 @@ const age = getAge(birthday)
                     class="tooltip"
                     v-bind:data-tip="t('about_me.birthday')"
                   >
-                    <v-icon name="fa-birthday-cake" />
+                    <v-icon animation="wrench" speed="slow" name="fa-birthday-cake" />
                   </div>
                 </div>
               </li>

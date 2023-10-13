@@ -1,10 +1,8 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import {ref} from "vue";
+import OwnCollapse from "@/components/item/OwnCollapse.vue";
 
 const { t } = useI18n()
-let up_matse = ref(true);
-let up_ita = ref(true);
 </script>
 
 <template>
@@ -14,12 +12,7 @@ let up_ita = ref(true);
         {{ t('my-career.title') }}
       </h2>
       <!-- MaTSe -->
-      <div class="collapse bg-base-200">
-        <input @click="up_matse=!up_matse" type="checkbox" />
-        <div class="absolute right-4 top-4">
-          <v-icon v-if="up_matse" name="bi-chevron-up" scale="1.5"/>
-          <v-icon v-else name="bi-chevron-down" scale="1.5"/>
-        </div>
+      <OwnCollapse>
         <div class="collapse-title text-xl font-medium">
           {{ t('my-career.matse.title') }}
           <br />
@@ -70,14 +63,9 @@ let up_ita = ref(true);
             </code>
           </div>
         </div>
-      </div>
+      </OwnCollapse>
       <!-- ITA -->
-      <div class="collapse bg-base-200">
-        <input type="checkbox" @click="up_ita=!up_ita" />
-        <div class="absolute right-4 top-4">
-          <v-icon v-if="up_ita" name="bi-chevron-up" scale="1.5"/>
-          <v-icon v-else name="bi-chevron-down" scale="1.5"/>
-        </div>
+      <OwnCollapse>
         <div class="collapse-title text-xl font-medium">
           {{ t('my-career.ita.title') }}
           <br />
@@ -116,7 +104,7 @@ let up_ita = ref(true);
             </code>
           </div>
         </div>
-      </div>
+      </OwnCollapse>
     </div>
   </div>
 </template>
