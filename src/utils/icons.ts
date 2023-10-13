@@ -1,3 +1,9 @@
+/**
+ * Icons Module
+ *
+ * This module exports a list of icon components from the 'oh-vue-icons/icons' library.
+ * It provides easy access to various icon components for use in your Vue.js application.
+ */
 import {
   ViFileTypeAccess,
   ViFileTypeArduino,
