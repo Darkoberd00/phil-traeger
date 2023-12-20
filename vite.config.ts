@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: 'http://144.76.43.131:3000/',
+  base: 'https://www.phil-traeger.dev/',
   plugins: [
     vue(),
   ],
