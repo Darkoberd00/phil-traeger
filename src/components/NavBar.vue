@@ -7,7 +7,6 @@ const { t } = useI18n()
 const { changeLang, isDE } = useLangStore()
 
 const eevee_count = import.meta.env.VITE_EEVEE_COUNT
-const dropdown = ref<HTMLElement>()
 let showEevee = ref(false)
 let count = 0
 const name = import.meta.env.VITE_NAME || "no name"
@@ -15,25 +14,16 @@ const name = import.meta.env.VITE_NAME || "no name"
 /**
  * Toggle Function
  *
- * Toggles the state of a feature when called. If the count is less than 10, it increments the count by 1.
- * When the count reaches 10, it resets the count to 0 and toggles the state of 'showEevee'.
+ * Toggles the state of a feature when called. If the count is less than VITE_EEVEE_COUNT, it increments the count by 1.
+ * When the count reaches VITE_EEVEE_COUNT, it resets the count to 0 and toggles the state of 'showEevee'.
  */
 function toggle(): void {
-  if (count < 10) {
+  if (count < eevee_count) {
     count++
     return
   }
   count = 0
   showEevee.value = !showEevee.value
-}
-
-function removeFocus(): void {
-  console.log(dropdown.value)
-  setTimeout(() => {
-    console.log("test")
-    dropdown.value?.blur()
-  }, 300)
-
 }
 </script>
 
@@ -50,15 +40,15 @@ function removeFocus(): void {
             class="menu dropdown-content rounded-box menu-sm z-[1] mt-3 w-52 space-y-1 bg-base-300 p-2 shadow-2xl"
           >
             <li>
-              <RouterLink @click="removeFocus" to="/" exactActiveClass="active">{{ t('navbar.about') }}</RouterLink>
+              <RouterLink to="/" exactActiveClass="active">{{ t('navbar.about') }}</RouterLink>
             </li>
             <li>
-              <RouterLink @click="removeFocus" to="/contact" exactActiveClass="active">{{
+              <RouterLink to="/contact" exactActiveClass="active">{{
                 t('navbar.contact')
               }}</RouterLink>
             </li>
             <li>
-              <RouterLink @click="removeFocus" to="/project" exactActiveClass="active">{{
+              <RouterLink to="/project" exactActiveClass="active">{{
                 t('navbar.project')
               }}</RouterLink>
             </li>
