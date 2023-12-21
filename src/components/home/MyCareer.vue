@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
+import OwnCollapse from "@/components/item/OwnCollapse.vue";
 
 const { t } = useI18n()
 </script>
@@ -11,8 +12,7 @@ const { t } = useI18n()
         {{ t('my-career.title') }}
       </h2>
       <!-- MaTSe -->
-      <div class="collapse bg-base-200">
-        <input type="checkbox" />
+      <OwnCollapse>
         <div class="collapse-title text-xl font-medium">
           {{ t('my-career.matse.title') }}
           <br />
@@ -63,10 +63,9 @@ const { t } = useI18n()
             </code>
           </div>
         </div>
-      </div>
+      </OwnCollapse>
       <!-- ITA -->
-      <div class="collapse bg-base-200">
-        <input type="checkbox" />
+      <OwnCollapse>
         <div class="collapse-title text-xl font-medium">
           {{ t('my-career.ita.title') }}
           <br />
@@ -105,7 +104,7 @@ const { t } = useI18n()
             </code>
           </div>
         </div>
-      </div>
+      </OwnCollapse>
     </div>
   </div>
 </template>

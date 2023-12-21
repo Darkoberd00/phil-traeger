@@ -30,5 +30,9 @@ import NavBar from '@/components/NavBar.vue'
     </RouterView>
   </div>
 
-  <footer class="footer"></footer>
+  <footer class="footer footer-center p-2 text-base-content">
+    <aside>
+      <p>Copyright <v-icon name="fa-regular-copyright"></v-icon> 2023 - All right reserved by Phil Träger</p>
+    </aside>
+  </footer>
 </template>

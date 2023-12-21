@@ -5,6 +5,8 @@ import { ref } from 'vue'
 import { useLangStore } from '@/stores/lang'
 const { t } = useI18n()
 const { changeLang, isDE } = useLangStore()
+
+const eevee_count = import.meta.env.VITE_EEVEE_COUNT
 let showEevee = ref(false)
 let count = 0
 const name = import.meta.env.VITE_NAME || "no name"
@@ -12,11 +14,11 @@ const name = import.meta.env.VITE_NAME || "no name"
 /**
  * Toggle Function
  *
- * Toggles the state of a feature when called. If the count is less than 10, it increments the count by 1.
- * When the count reaches 10, it resets the count to 0 and toggles the state of 'showEevee'.
+ * Toggles the state of a feature when called. If the count is less than VITE_EEVEE_COUNT, it increments the count by 1.
+ * When the count reaches VITE_EEVEE_COUNT, it resets the count to 0 and toggles the state of 'showEevee'.
  */
 function toggle(): void {
-  if (count < 10) {
+  if (count < eevee_count) {
     count++
     return
   }
@@ -62,7 +64,7 @@ function toggle(): void {
         </div>
       </div>
       <div class="navbar-end">
-        <div @click="changeLang()" class="btn btn-ghost">
+        <div @click="changeLang" class="btn btn-ghost">
           <div>
             <img
               v-if="isDE()"

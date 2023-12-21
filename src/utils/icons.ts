@@ -64,6 +64,9 @@ import {
   BiArchiveFill,
   ViFileTypeRust,
   ViFileTypeElixir,
+  BiChevronUp,
+  BiChevronDown,
+  FaRegularCopyright
 } from 'oh-vue-icons/icons'
 export {
   ViFileTypeAccess,
@@ -125,4 +128,7 @@ export {
   BiArchiveFill,
   ViFileTypeRust,
   ViFileTypeElixir,
+  BiChevronUp,
+  BiChevronDown,
+  FaRegularCopyright
 }
