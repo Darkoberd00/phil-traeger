@@ -77,13 +77,15 @@
     "project": "Projekte"
   },
   "project": {
+    "title": "Meine Projekte",
+    "description": "Hier befinden sich meine Größeren Projekte! Die sich nicht auf Github Public finden lassen.",
     "ar": {
       "title": "Amazing Roulette",
-      "subtitle": "Gamified Amazon"
+      "subtitle": "Eine gamifizierte mobile Anwendung, die im Rahmen meines Studienganges."
     },
     "pt": {
       "title": "phil-traeger.dev",
-      "subtitle": "Eine Portfoliowebseite über mich"
+      "subtitle": "Eine Portfoliowebseite über mich."
     }
   },
   "read-more": "Mehr Lesen..."

@@ -27,13 +27,13 @@ repoList.forEach((repo) => {
   </div>
 
   <div class="mt-4 flex">
-    <div class="mx-auto">
+    <div class="mx-auto max-sm:w-full">
       <ARShowcase></ARShowcase>
     </div>
   </div>
 
   <div class="mt-4 flex">
-    <div class="mx-auto">
+    <div class="mx-auto max-sm:w-full">
       <PTShowcase></PTShowcase>
     </div>
   </div>

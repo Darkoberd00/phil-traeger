@@ -77,9 +77,11 @@
     "project": "Projects"
   },
   "project": {
+    "title": "My Projects",
+    "description": "Here are my bigger projects! Which cannot be found on Github Public.",
     "ar": {
       "title": "Amazing Roulette",
-      "subtitle": "Gamified Amazon"
+      "subtitle": "A gamified mobile application developed as part of my degree program."
     },
     "pt": {
       "title": "phil-traeger.dev",
