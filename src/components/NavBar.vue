@@ -9,7 +9,7 @@ const { changeLang, isDE } = useLangStore()
 const eevee_count = import.meta.env.VITE_EEVEE_COUNT
 let showEevee = ref(false)
 let count = 0
-const name = import.meta.env.VITE_NAME || "no name"
+const name = import.meta.env.VITE_NAME || 'no name'
 
 /**
  * Toggle Function

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import OwnCollapse from "@/components/item/OwnCollapse.vue";
+import OwnCollapse from '@/components/item/OwnCollapse.vue'
 
 const { t } = useI18n()
 </script>

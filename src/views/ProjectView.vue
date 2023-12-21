@@ -3,9 +3,9 @@ import { getGithubProfile, getRepos } from '@/api'
 import MyRepoGithub from '@/components/project/MyRepoGithub.vue'
 import type { Repo } from '@/types/github'
 import MyGithub from '@/components/project/MyGithub.vue'
-import ARShowcase from "@/components/project/amazing-roulette/ARShowcase.vue";
-import MyProjects from "@/components/project/MyProjects.vue";
-import PTShowcase from "@/components/project/phil-traeger/PTShowcase.vue";
+import ARShowcase from '@/components/project/amazing-roulette/ARShowcase.vue'
+import MyProjects from '@/components/project/MyProjects.vue'
+import PTShowcase from '@/components/project/phil-traeger/PTShowcase.vue'
 
 const user = import.meta.env.VITE_GITHUB_USER
 const repoList = await getRepos(user)
