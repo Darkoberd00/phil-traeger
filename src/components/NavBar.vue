@@ -1,19 +1,25 @@
 <script setup lang="ts">
-
 import { RouterLink } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { ref } from 'vue'
 import { useLangStore } from '@/stores/lang'
 const { t } = useI18n()
 const { changeLang, isDE } = useLangStore()
-const name = import.meta.env.VITE_NAME
+
 const eevee_count = import.meta.env.VITE_EEVEE_COUNT
 const dropdown = ref<HTMLElement>()
 let showEevee = ref(false)
 let count = 0
+const name = import.meta.env.VITE_NAME || "no name"
 
+/**
+ * Toggle Function
+ *
+ * Toggles the state of a feature when called. If the count is less than 10, it increments the count by 1.
+ * When the count reaches 10, it resets the count to 0 and toggles the state of 'showEevee'.
+ */
 function toggle(): void {
-  if (count < eevee_count) {
+  if (count < 10) {
     count++
     return
   }
@@ -35,7 +41,7 @@ function removeFocus(): void {
   <div class="rounded-box mt-4 shadow-xl max-md:mx-4 md:mx-auto md:w-[50%]">
     <div class="navbar rounded-box bg-base-300">
       <div class="navbar-start">
-        <div ref="dropdown" class="dropdown">
+        <div class="dropdown">
           <label tabindex="0" class="btn btn-circle btn-ghost">
             <v-icon name="hi-menu-alt-2" scale="1.5" />
           </label>

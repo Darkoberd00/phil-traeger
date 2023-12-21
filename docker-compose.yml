@@ -5,6 +5,8 @@ services:
       context: .
     ports:
       - "3000:3000"
+    volumes:
+      - ./.nginx/nginx.conf:/etc/nginx/nginx.conf
     container_name: phil-traeger_web
     expose:
       - 3000
