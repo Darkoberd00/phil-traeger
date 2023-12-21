@@ -1,13 +1,7 @@
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <div>
-    Amazing Roulette
-  </div>
+  <div>Amazing Roulette</div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

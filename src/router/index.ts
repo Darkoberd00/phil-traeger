@@ -3,8 +3,8 @@ import HomeView from '@/views/HomeView.vue'
 import NotFoundView from '@/views/NotFoundView.vue'
 import ContactView from '@/views/ContactView.vue'
 import ProjectView from '@/views/ProjectView.vue'
-import PhilTraeger from "@/views/project/Phil-Traeger.vue";
-import AmazingRoulette from "@/views/project/Amazing-Roulette.vue";
+import PhilTraeger from '@/views/project/Phil-Traeger.vue'
+import AmazingRoulette from '@/views/project/Amazing-Roulette.vue'
 
 const router = createRouter({
   history: createWebHistory(''),

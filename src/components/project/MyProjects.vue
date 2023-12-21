@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {useI18n} from "vue-i18n";
+import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
 </script>
@@ -13,6 +13,4 @@ const { t } = useI18n()
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
