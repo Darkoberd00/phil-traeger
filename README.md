@@ -20,18 +20,23 @@ If you want to contribute or run the project locally for development purposes, u
 2. Edit the `.env` file to set up local environment variables.
 3. Start the development server by running `npm run dev`.
 
-### Technologies Used
+## Technologies Used
 
 This project is built using the following technologies:
 
-- **Nuxt.js**: A progressive Vue.js framework for building modern web applications.
-- **Tailwind CSS**: A utility-first CSS framework for rapidly building custom designs.
-- **Vue.js**: A JavaScript framework for building user interfaces.
-- **Vue Router**: The official router for Vue.js applications.
-- **Autoprefixer**: A PostCSS plugin to parse CSS and add vendor prefixes.
-- **DaisyUI**: A set of robust UI components for Tailwind CSS.
-- **Nuxt Icon**: A Nuxt module for generating optimized SVG icons.
-- **PostCSS**: A tool for transforming styles with JavaScript plugins.
+- **Vue.js** - A progressive JavaScript framework for building user interfaces.
+- **Vue Router** - The official router for Vue.js.
+- **Vue I18n** - Internationalization plugin for Vue.js.
+- **Pinia** - A state management library for Vue.js.
+- **Oh Vue Icons** - A collection of Vue.js icons.
+- **Tailwind CSS** - A utility-first CSS framework.
+- **DaisyUI** - A set of beautiful, accessible UI components for Tailwind CSS.
+- **ESLint** - A pluggable and configurable linter tool for identifying and fixing code issues.
+- **Prettier** - An opinionated code formatter.
+- **Vite** - A fast development server and static site generator for Vue.js.
+- **Vitest** - A testing library for Vue.js projects.
+- **TypeScript** - A typed superset of JavaScript that compiles to plain JavaScript.
+- **Nginx** - A web server used for production deployment.
 
 Feel free to explore the codebase, suggest improvements, or contribute to make this portfolio even better!
 
