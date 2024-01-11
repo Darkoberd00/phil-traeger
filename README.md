@@ -1,52 +1,40 @@
-# phil-traeger
+# Phil Traeger Portfolio Website
 
-This template should help get you started developing with Vue 3 in Vite.
+## Description
 
-## Recommended IDE Setup
+Welcome to the Phil Traeger Portfolio website! This project serves as a showcase of my skills, projects, and experiences. Whether you're a potential employer or just curious about my work, feel free to explore the various sections and get to know me better.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Production Setup
 
-## Type Support for `.vue` Imports in TS
+To run this project in a production environment, follow these steps:
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+1. Edit the `.env` file to configure any necessary environment variables.
+2. Edit the `.nginx/nginx.conf` file if additional Nginx configurations are needed.
+3. Run the project using Docker Compose by executing the command `docker-compose.yml`.
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+## Development Setup
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+If you want to contribute or run the project locally for development purposes, use the following steps:
 
-## Customize configuration
+1. Install the necessary dependencies by running `npm i`.
+2. Edit the `.env` file to set up local environment variables.
+3. Start the development server by running `npm run dev`.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+### Technologies Used
 
-## Project Setup
+This project is built using the following technologies:
 
-```sh
-npm install
-```
+- **Nuxt.js**: A progressive Vue.js framework for building modern web applications.
+- **Tailwind CSS**: A utility-first CSS framework for rapidly building custom designs.
+- **Vue.js**: A JavaScript framework for building user interfaces.
+- **Vue Router**: The official router for Vue.js applications.
+- **Autoprefixer**: A PostCSS plugin to parse CSS and add vendor prefixes.
+- **DaisyUI**: A set of robust UI components for Tailwind CSS.
+- **Nuxt Icon**: A Nuxt module for generating optimized SVG icons.
+- **PostCSS**: A tool for transforming styles with JavaScript plugins.
 
-### Compile and Hot-Reload for Development
+Feel free to explore the codebase, suggest improvements, or contribute to make this portfolio even better!
 
-```sh
-npm run dev
-```
+Thank you for checking out the Phil Traeger Portfolio website! If you have any questions or suggestions, feel free to reach out.
 
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+Happy coding! 🚀
