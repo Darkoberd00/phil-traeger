@@ -34,15 +34,15 @@
           </div>
         </div>
         <div class='navbar-center'>
-          <p class="font-bold text-[1.3rem]">
-            Phil Träger
+          <p class="btn btn-ghost font-bold text-[1.3rem]">
+            phil-traeger.dev
           </p>
         </div>
         <div class='navbar-end'>
           <div class='btn btn-ghost'>
             <div>
               <img
-                  class='h-fit w-10 rounded'
+                  class='w-10 rounded h-fit'
                   src='~/assets/img/Flag_of_Germany.svg'
                   alt='de'
               />

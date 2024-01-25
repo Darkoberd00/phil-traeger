@@ -3,7 +3,11 @@
 </script>
 
 <template>
-
+  <div>
+    <p>
+      amazing
+    </p>
+  </div>
 </template>
 
 <style scoped>
