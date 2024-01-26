@@ -4,10 +4,10 @@
 
 <template>
   <div>
-    <footer class="footer footer-center p-2 text-base-content">
+    <footer class="footer footer-center p-2 text-base-content cursor-default">
       <aside>
         <p>
-          Copyright © 2023 - All right reserved by Phil Träger
+          Copyright © 2023 - All right reserved by Phil Träger<a class="blink-2">|</a>
         </p>
       </aside>
     </footer>
