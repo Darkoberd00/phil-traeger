@@ -1,5 +1,8 @@
 <script setup lang="ts">
-
+  const {t} = useI18n()
+  const year = computed(()=> {
+    return new Date().getFullYear()
+  })
 </script>
 
 <template>
@@ -7,7 +10,7 @@
     <footer class="footer footer-center p-2 text-base-content cursor-default">
       <aside>
         <p>
-          Copyright © 2023 - All right reserved by Phil Träger<a class="blink-2">|</a>
+          Copyright © {{year}} - {{t('footer.rights')}} Phil Träger<span class="blink-2">|</span>
         </p>
       </aside>
     </footer>

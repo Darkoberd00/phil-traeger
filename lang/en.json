@@ -1,0 +1,13 @@
+{
+  "footer": {
+    "rights": "All right reserved by",
+    "imprint": "Imprint",
+    "data-protection": "Data Protection"
+  },
+  "read-more": "Read More...",
+  "navbar": {
+    "about": "About Me",
+    "contact": "Contact",
+    "project": "Projects"
+  }
+}

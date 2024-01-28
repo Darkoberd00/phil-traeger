@@ -1,6 +1,7 @@
 <script setup lang='ts'>
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
+const localPath = useLocalePath()
 </script>
 
 <template>
@@ -16,18 +17,18 @@ const switchLocalePath = useSwitchLocalePath()
                 class='menu dropdown-content rounded-box menu-sm z-[1] mt-3 w-52 space-y-1 bg-base-300 p-2 shadow-2xl'
             >
               <li>
-                <NuxtLink tabindex='0' to='/' active-class='active'>
-                  Über Mich
+                <NuxtLink tabindex='0' :to="localPath('/')" active-class='active'>
+                  {{ t('navbar.about') }}
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink tabindex='0' to='contact'  active-class='active'>
-                  Kontakt
+                <NuxtLink tabindex='0' :to="localPath('/contact')"  active-class='active'>
+                  {{ t('navbar.contact') }}
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink tabindex='0' to='/projects'  active-class='active'>
-                  Projekte
+                <NuxtLink tabindex='0' :to="localPath('/projects')"   active-class='active'>
+                  {{ t('navbar.project') }}
                 </NuxtLink>
               </li>
             </ul>

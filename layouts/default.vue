@@ -5,7 +5,10 @@
 <template>
   <div>
     <AppHeader />
-    <slot />
+    <div class="p-4">
+      <slot />
+    </div>
+
     <AppFooter />
   </div>
 </template>
