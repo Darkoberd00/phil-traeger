@@ -1,4 +1,8 @@
-# Phil Traeger Portfolio Website
+
+<div align="center">
+    <img src="assets/img/phil-traeger.png" alt="Logo" width="160" height="160">
+    <h3 align="center">Phil Traeger Portfolio Website</h3>
+</div>
 
 ## Description
 
