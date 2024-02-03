@@ -3,6 +3,8 @@
     <h3 align="center">Phil Traeger Portfolio Website</h3>
 </div>
 
+![Workflow](https://github.com/Darkoberd00/phil-traeger/actions/workflows/node-js.yml/badge.svg)
+
 ## Description
 
 Welcome to the Phil Traeger Portfolio website! This project serves as a showcase of my skills, projects, and experiences. Whether you're a potential employer or just curious about my work, feel free to explore the various sections and get to know me better.
