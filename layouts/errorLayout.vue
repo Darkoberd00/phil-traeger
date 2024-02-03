@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    <AppOwnHeader :error="false" />
+    <AppOwnHeader :error="true" />
     <div class="p-4">
       <slot />
     </div>

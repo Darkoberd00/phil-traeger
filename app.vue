@@ -32,23 +32,23 @@ useHead({
   ],
   meta: [
     {
-      charset: 'utf-8',
+      charset: 'utf-8'
     },
     {
       name: 'viewport',
-      content: 'width=device-width, initial-scale=1.0',
+      content: 'width=device-width, initial-scale=1.0'
     },
     {
       name: 'theme-color',
       content: '#ffffff'
     }
-  ],
+  ]
 })
 </script>
 
 <template>
-  <meta name="theme-color" content="#ffffff">
   <div>
+    <meta name="theme-color" content="#ffffff" />
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>

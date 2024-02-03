@@ -8,6 +8,18 @@
   "navbar": {
     "about": "About Me",
     "contact": "Contact",
-    "project": "Projects"
+    "project": "Projects",
+    "games": "Games"
+  },
+  "games": {
+    "minesweeper": {
+      "title": "Minesweeper",
+      "description": "Minesweeper is a single-player puzzle video game. The objective of the game is to clear a rectangular board containing hidden \"mines\" or bombs without detonating any of them, with help from clues about the number of neighboring mines in each field."
+    }
+  },
+  "seo": {
+    "about": {
+      "description": "When I was 7, I realized that I could handle computers. When I was 14 I started programming with a small laptop and got my first programming experience."
+    }
   }
 }

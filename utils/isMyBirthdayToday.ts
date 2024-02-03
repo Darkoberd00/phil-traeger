@@ -8,6 +8,6 @@
  * @returns {boolean} - True if the provided date is today's date (in terms of day and month), otherwise false.
  */
 export default function (oDate: Date): boolean {
-    const today = new Date()
-    return oDate.getDay() === today.getDay() && oDate.getMonth() === today.getMonth()
+  const today = new Date()
+  return oDate.getDay() === today.getDay() && oDate.getMonth() === today.getMonth()
 }

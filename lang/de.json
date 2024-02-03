@@ -8,6 +8,18 @@
   "navbar": {
     "about": "Über Mich",
     "contact": "Kontakt",
-    "project": "Projekte"
+    "project": "Projekte",
+    "games": "Spiele"
+  },
+  "games": {
+    "minesweeper": {
+      "title": "Minesweeper",
+      "description": "Minesweeper ist ein Einzelspieler-Puzzle-Videospiel. Ziel des Spiels ist es, ein rechteckiges Spielfeld mit versteckten \"Minen\" oder Bomben zu räumen, ohne eine von ihnen zur Explosion zu bringen, wobei Hinweise auf die Anzahl der benachbarten Minen in jedem Feld helfen."
+    }
+  },
+  "seo": {
+    "about": {
+      "description": "Als ich 7 war, habe ich gemerkt, dass ich mit Computern umgehen kann. Mit 14 habe ich angefangen, mit einem kleinen Laptop zu programmieren und habe so meine erste Programmiererfahrung gesammelt."
+    }
   }
 }

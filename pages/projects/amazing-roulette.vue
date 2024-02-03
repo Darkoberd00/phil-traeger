@@ -1,15 +1,9 @@
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div>
-    <p>
-      amazing
-    </p>
+    <p>amazing</p>
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
