@@ -2,7 +2,7 @@
 import type { Ref } from 'vue'
 import OwnCard from '~/components/ownCard.vue'
 
-const debug = ref(false) // DEBUG
+const debug = ref(true) // DEBUG
 const tilesSpeed = ref(100)
 
 /**
@@ -285,10 +285,12 @@ function formatTimer(timer: Timer): string {
 }
 
 // Create the board and place the mines
-createBoard()
-placeMines()
-countMinesAround()
-timer()
+onNuxtReady(() => {
+  createBoard()
+  placeMines()
+  countMinesAround()
+  timer()
+})
 </script>
 
 <template>
