@@ -3,6 +3,8 @@ const props = defineProps<{
   search?: string
 }>()
 
+console.log(props.search)
+
 const list = [
   'sad eevee',
   'maxxc12 no disappointment',
@@ -17,13 +19,18 @@ const list = [
   'pc breaking',
   props.search
 ]
-const { data: url } = await useFetch('/api/tenorSearchOne', {
-  query: { search: list[Math.floor(Math.random() * list.length)] }
-})
+
+const { data: url } = await useAsyncData(
+  'gif',
+  () => $fetch('/api/tenorSearchOne', {
+    query: { search: list[Math.floor(Math.random() * list.length)] }
+  })
+)
+
 </script>
 
 <template>
-  <NuxtImg provider="tenor" :src="url" />
+  <NuxtImg v-if="url !== null" provider="tenor" :src="url" />
 </template>
 
 <style scoped></style>
