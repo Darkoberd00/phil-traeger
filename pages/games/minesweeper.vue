@@ -2,6 +2,17 @@
 import type { Ref } from 'vue'
 import OwnCard from '~/components/ownCard.vue'
 
+const { t, locale } = useI18n()
+const runtimeConfig = useRuntimeConfig()
+const url = runtimeConfig.public.URL
+useSeoMeta({
+  ogTitle: 'Minesweeper',
+  ogDescription: t('games.minesweeper.description'),
+  ogUrl: 'https://' + url + '/' + locale + '/games/minesweeper',
+  twitterTitle: 'Minesweeper',
+  twitterDescription: t('games.minesweeper.description')
+})
+
 const debug = ref(true) // DEBUG
 const tilesSpeed = ref(100)
 
@@ -210,10 +221,21 @@ function score(): number {
 }
 
 /**
- * Reload the site
+ * restart Game
  */
-function reloadSite() {
-  location.reload()
+function restartGame() {
+  flagEnabled.value = false
+  board.value = []
+  time.value = { ms: 0, s: 0 }
+  startTime.value = new Date()
+  tilesClicked.value = 0
+  timerstarted.value = false
+  gameOver.value = false
+
+  createBoard()
+  placeMines()
+  countMinesAround()
+  timer()
 }
 
 /**
@@ -284,6 +306,39 @@ function formatTimer(timer: Timer): string {
   return `${timer.s}.${ms}`
 }
 
+onBeforeMount(() => {
+  if (window.innerWidth < 768) {
+    document.documentElement.style.setProperty('--board', 'calc(100vw - 132px)')
+    document.documentElement.style.setProperty('--board-tile', 'calc((100vw - (132px + 22px)) / 8)')
+    document.documentElement.style.setProperty(
+      '--board-font-size',
+      'calc((100vw - (132px + 22px)) / 8 - 10px)'
+    )
+  } else {
+    document.documentElement.style.setProperty('--board', '404px')
+    document.documentElement.style.setProperty('--board-tile', '48px')
+    document.documentElement.style.setProperty('--board-font-size', '30px')
+  }
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth < 768) {
+      document.documentElement.style.setProperty('--board', 'calc(100vw - 132px)')
+      document.documentElement.style.setProperty(
+        '--board-tile',
+        'calc((100vw - (132px + 22px)) / 8)'
+      )
+      document.documentElement.style.setProperty(
+        '--board-font-size',
+        'calc((100vw - (132px + 22px)) / 8 - 10px)'
+      )
+    } else {
+      document.documentElement.style.setProperty('--board', '404px')
+      document.documentElement.style.setProperty('--board-tile', '48px')
+      document.documentElement.style.setProperty('--board-font-size', '30px')
+    }
+  })
+})
+
 // Create the board and place the mines
 onNuxtReady(() => {
   createBoard()
@@ -296,7 +351,7 @@ onNuxtReady(() => {
 <template>
   <div>
     <OwnCard
-      title="Minesweeper"
+      :title="t('games.minesweeper.title')"
       card-width="max-md:mx-4 mx-auto w-fit"
       title-class="justify-center flex font-bold text-2xl cursor-default"
     >
@@ -340,7 +395,7 @@ onNuxtReady(() => {
         <button
           tabindex="0"
           class="btn btn-ghost w-fit"
-          :class="{ 'btn-active': flagEnabled }"
+          :class="{ 'text-blue-700 btn-active': flagEnabled }"
           @click="setFlag"
         >
           <IconFlagGIS></IconFlagGIS>
@@ -353,7 +408,7 @@ onNuxtReady(() => {
         <p class="text-xl justify-center flex">Score: {{ score() }}</p>
       </div>
       <div v-if="gameOver" class="justify-center flex">
-        <button tabindex="0" class="text-xl btn btn-ghost w-fit" @click="reloadSite">
+        <button tabindex="0" class="text-xl btn btn-ghost w-fit" @click="restartGame">
           Restart
         </button>
       </div>
@@ -368,8 +423,8 @@ onNuxtReady(() => {
 
 <style scoped>
 .board {
-  width: 404px;
-  height: 404px;
+  width: var(--board);
+  height: var(--board);
   border: 10px solid darkgrey;
   background-color: lightgrey;
   margin: 0 auto;
@@ -378,10 +433,10 @@ onNuxtReady(() => {
 }
 
 .board div div {
-  width: 48px;
-  height: 48px;
+  width: var(--board-tile);
+  height: var(--board-tile);
   border: 1px solid black;
-  font-size: 30px;
+  font-size: var(--board-font-size);
   display: flex;
   justify-content: center;
   align-items: center;

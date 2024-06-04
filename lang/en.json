@@ -15,6 +15,10 @@
     "minesweeper": {
       "title": "Minesweeper",
       "description": "Minesweeper is a single-player puzzle video game. The objective of the game is to clear a rectangular board containing hidden \"mines\" or bombs without detonating any of them, with help from clues about the number of neighboring mines in each field."
+    },
+    "2048": {
+      "title": "2048",
+      "description": "2048 is a popular puzzle game that was developed by Gabriele Cirulli in 2014. It is played on a 4x4 grid. The aim is to reach the number 2048 by merging tiles with the same numbers."
     }
   },
   "seo": {
