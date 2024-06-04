@@ -339,6 +339,12 @@ onBeforeMount(() => {
   })
 })
 
+onBeforeUnmount(() => {
+  document.documentElement.style.removeProperty('--board')
+  document.documentElement.style.removeProperty('--board-tile')
+  document.documentElement.style.removeProperty('--board-font-size')
+})
+
 // Create the board and place the mines
 onNuxtReady(() => {
   createBoard()
