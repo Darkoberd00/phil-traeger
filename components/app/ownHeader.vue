@@ -45,9 +45,12 @@ defineProps<{
           </div>
         </div>
         <div class="navbar-center">
-          <p class="btn btn-ghost font-bold text-[1.3rem] tracking-in-expand">
+          <NuxtLink
+            :to="localPath('/')"
+            class="btn btn-ghost font-bold text-[1.3rem] tracking-in-expand"
+          >
             {{ url }}
-          </p>
+          </NuxtLink>
         </div>
         <div class="navbar-end">
           <div class="btn btn-ghost">

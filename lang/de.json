@@ -11,6 +11,9 @@
     "project": "Projekte",
     "games": "Spiele"
   },
+  "about": {
+    "skills": "Programmiererfahrung"
+  },
   "games": {
     "minesweeper": {
       "title": "Minesweeper",

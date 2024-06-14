@@ -3,6 +3,8 @@ title: Über Mich
 short: Eine Kurze geschichte über Mich
 ---
 
+[hallo](hallo)
+
 Als ich 7 war, habe ich gemerkt, dass ich mit Computern umgehen kann.
 Mit 14 habe ich angefangen,
 mit einem kleinen Laptop zu programmieren und habe so meine erste Programmiererfahrung gesammelt.

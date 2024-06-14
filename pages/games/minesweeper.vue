@@ -6,6 +6,7 @@ const { t, locale } = useI18n()
 const runtimeConfig = useRuntimeConfig()
 const url = runtimeConfig.public.URL
 useSeoMeta({
+  title: 'Minesweeper',
   ogTitle: 'Minesweeper',
   ogDescription: t('games.minesweeper.description'),
   ogUrl: 'https://' + url + '/' + locale + '/games/minesweeper',
@@ -15,6 +16,8 @@ useSeoMeta({
 
 const debug = ref(true) // DEBUG
 const tilesSpeed = ref(100)
+const rows = 10
+const cols = rows
 
 /**
  * Feld is a single tile on the board
@@ -49,8 +52,6 @@ type Timer = {
 }
 
 const board: Ref<Feld[][]> = ref([])
-const rows = 8
-const cols = 8
 const mines = Math.floor(rows * cols * 0.15)
 
 const time: Ref<Timer> = ref({ ms: 0, s: 0 })
@@ -59,6 +60,7 @@ const tilesClicked = ref(0)
 const flagEnabled = ref(false)
 const timerstarted = ref(false)
 const gameOver = ref(false)
+const iconSize = ref('calc((100vw - (132px + 22px)) / ' + cols + ' - 4px)')
 
 /**
  * Create the board
@@ -145,7 +147,10 @@ function tileClicked(tile: Feld) {
     const neighbors = getNeighbors(tile.x, tile.y)
     for (const neighbor of neighbors) {
       setTimeout(function () {
-        tileClicked(neighbor)
+        if (!neighbor.isClicked) {
+          console.log(neighbor)
+          tileClicked(neighbor)
+        }
       }, tilesSpeed.value)
     }
   }
@@ -215,7 +220,7 @@ function score(): number {
       }
     })
   })
-  score = (score * 1000) / (time.value.s + time.value.ms / 1000)
+  // score = score * (time.value.s * 1000 + time.value.ms / 1000)
 
   return Math.floor(score)
 }
@@ -306,36 +311,36 @@ function formatTimer(timer: Timer): string {
   return `${timer.s}.${ms}`
 }
 
-onBeforeMount(() => {
+function resizeBoard() {
   if (window.innerWidth < 768) {
     document.documentElement.style.setProperty('--board', 'calc(100vw - 132px)')
-    document.documentElement.style.setProperty('--board-tile', 'calc((100vw - (132px + 22px)) / 8)')
+    document.documentElement.style.setProperty(
+      '--board-tile',
+      'calc((100vw - (132px + 22px)) / ' + cols + ')'
+    )
     document.documentElement.style.setProperty(
       '--board-font-size',
-      'calc((100vw - (132px + 22px)) / 8 - 10px)'
+      'calc((100vw - (132px + 22px)) / ' + cols + ' - 4px)'
     )
+    iconSize.value = 'calc((100vw - (132px + 22px)) / ' + cols + ' - 10px)'
   } else {
     document.documentElement.style.setProperty('--board', '404px')
-    document.documentElement.style.setProperty('--board-tile', '48px')
-    document.documentElement.style.setProperty('--board-font-size', '30px')
+    document.documentElement.style.setProperty(
+      '--board-tile',
+      'calc((404px - 21.5px) / ' + cols + ')'
+    )
+    document.documentElement.style.setProperty(
+      '--board-font-size',
+      'calc((404px - 21.5px) / ' + cols + ' - 4px)'
+    )
+    iconSize.value = 'calc((404px - 21.5px) / ' + cols + ' - 10px)'
   }
+}
 
+onBeforeMount(() => {
+  resizeBoard()
   window.addEventListener('resize', () => {
-    if (window.innerWidth < 768) {
-      document.documentElement.style.setProperty('--board', 'calc(100vw - 132px)')
-      document.documentElement.style.setProperty(
-        '--board-tile',
-        'calc((100vw - (132px + 22px)) / 8)'
-      )
-      document.documentElement.style.setProperty(
-        '--board-font-size',
-        'calc((100vw - (132px + 22px)) / 8 - 10px)'
-      )
-    } else {
-      document.documentElement.style.setProperty('--board', '404px')
-      document.documentElement.style.setProperty('--board-tile', '48px')
-      document.documentElement.style.setProperty('--board-font-size', '30px')
-    }
+    resizeBoard()
   })
 })
 
@@ -381,12 +386,21 @@ onNuxtReady(() => {
               @click="tileClicked(tile)"
               @click.right="rightTileClicked(tile)"
             >
-              <span v-if="tile.isMine && tile.isClicked"
-                ><IconBombMaterial class="text-red"></IconBombMaterial
-              ></span>
-              <span v-else-if="tile.isFlagged && !tile.isClicked"
-                ><IconFlagGIS class="text-blue-700"></IconFlagGIS
-              ></span>
+              <span v-if="tile.isMine && tile.isClicked">
+                <Icon
+                  name="material-symbols:bomb-rounded"
+                  :size="iconSize"
+                  style="color: #ff0000"
+                  class="jello-vertical"
+                />
+              </span>
+              <span v-else-if="tile.isFlagged && !tile.isClicked">
+                <Icon
+                  class="text-blue-700 jello-vertical"
+                  name="gis:bookmark-poi"
+                  :size="iconSize"
+                />
+              </span>
               <span
                 v-else-if="tile.minesAround > 0 && tile.isClicked"
                 :class="'x' + tile.minesAround"

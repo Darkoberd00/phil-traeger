@@ -7,14 +7,16 @@ const list = [
   'sad eevee',
   'maxxc12 no disappointment',
   'John Cena',
-  '404',
   'Wo ist mein bier',
-  'Fuck u',
   'hand of blood rage',
   'atombombe',
-  'Winston Rocketbeans',
-  'Tailerswift',
   'pc breaking',
+  'Minions',
+  'Darth Vader',
+  'Windows error',
+  'Linux error',
+  'Mac error',
+  'uplaod loading error pissed',
   props.search
 ]
 
