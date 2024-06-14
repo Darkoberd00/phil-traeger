@@ -1,14 +1,18 @@
 /** @type {import('tailwindcss').Config} */
-// eslint-disable-next-line no-undef
-module.exports = {
+export default {
+  nuxtIcon: {
+    class: 'icon' // default <Icon> class applied
+  },
   content: [
-    "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}",
+    './components/**/*.{js,vue,ts}',
+    './layouts/**/*.vue',
+    './pages/**/*.vue',
+    './plugins/**/*.{js,ts}',
+    './app.vue',
+    './error.vue'
   ],
   theme: {
-    extend: {},
+    extend: {}
   },
-  // eslint-disable-next-line no-undef
-  plugins: [require("daisyui"), require("@tailwindcss/typography")],
+  plugins: [require('@tailwindcss/typography'), require('daisyui')]
 }
-

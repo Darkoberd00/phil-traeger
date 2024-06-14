@@ -1,0 +1,32 @@
+{
+  "footer": {
+    "rights": "Alle Rechte vorbehalten von",
+    "imprint": "Impressum",
+    "data-protection": "Datenschutzerklärung"
+  },
+  "read-more": "Mehr Lesen...",
+  "navbar": {
+    "about": "Über Mich",
+    "contact": "Kontakt",
+    "project": "Projekte",
+    "games": "Spiele"
+  },
+  "about": {
+    "skills": "Programmiererfahrung"
+  },
+  "games": {
+    "minesweeper": {
+      "title": "Minesweeper",
+      "description": "Minesweeper ist ein Einzelspieler-Puzzle-Videospiel. Ziel des Spiels ist es, ein rechteckiges Spielfeld mit versteckten \"Minen\" oder Bomben zu räumen, ohne eine von ihnen zur Explosion zu bringen, wobei Hinweise auf die Anzahl der benachbarten Minen in jedem Feld helfen."
+    },
+    "2048": {
+      "title": "2048",
+      "description": "2048 ist ein beliebtes Puzzle-Spiel, das 2014 von Gabriele Cirulli entwickelt wurde. Es wird auf einem 4x4-Raster gespielt. Ziel ist es, durch das Verschmelzen von Kacheln mit gleichen Zahlen die Zahl 2048 zu erreichen."
+    }
+  },
+  "seo": {
+    "about": {
+      "description": "Als ich 7 war, habe ich gemerkt, dass ich mit Computern umgehen kann. Mit 14 habe ich angefangen, mit einem kleinen Laptop zu programmieren und habe so meine erste Programmiererfahrung gesammelt."
+    }
+  }
+}
