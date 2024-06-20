@@ -28,7 +28,7 @@
     <ul style="display: flex; flex-wrap: wrap; gap: 10px; list-style: none;">
       <li v-for="movie in movies" :key="movie.imdbID">
         <NuxtLink :to="{ name: 'movies-id', params: {id: movie.imdbID}}">
-          <img :src="movie.Poster" alt="movie.Title" />
+          <NuxtImg :src="movie.Poster" :alt="movie.Title" width="300" format="webp"/>
         </NuxtLink>
       </li>
     </ul>

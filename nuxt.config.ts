@@ -8,14 +8,16 @@ export default defineNuxtConfig({
     ]
   },  
 
-  modules: [
-    ["@pinia/nuxt", {
-      autoImports: ["defineStore", "acceptHMRUpdate"]
-    }]
-  ],
+  modules: [["@pinia/nuxt", {
+    autoImports: ["defineStore", "acceptHMRUpdate"]
+  }], "@nuxt/image"],
 
   alias: {
     "pinia": "/node_modules/@pinia/nuxt/node_modules/pinia/dist/pinia.mjs"
+  },
+
+  image: {
+    domains: ["m.media-amazon.com"]
   },
 
   routeRules: {
