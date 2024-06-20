@@ -11,7 +11,7 @@
   const movies: Ref<Movie[]> = ref([]);
 
   async function search() {
-    const {Search} = await $fetch(`http://www.omdbapi.com/?apikey=2792f380&s=${query.value}`) as {Search: Movie[]};
+    const {Search} = await $fetch(`https://www.omdbapi.com/?apikey=2792f380&s=${query.value}`) as {Search: Movie[]};
     movies.value = Search;
   }
 

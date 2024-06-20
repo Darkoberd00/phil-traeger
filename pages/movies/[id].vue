@@ -9,7 +9,7 @@
   const route = useRoute();
 
   // http://www.omdbapi.com/?apikey=2792f380&i=${route.params.id}
-  const { data }: { data: Ref<MovieInfo> } = await useFetch(`http://www.omdbapi.com/?apikey=2792f380&i=${route.params.id}`, {
+  const { data }: { data: Ref<MovieInfo> } = await useFetch(`https://www.omdbapi.com/?apikey=2792f380&i=${route.params.id}`, {
     pick: ['Plot', 'Poster', 'Title', 'Error'],
     key: `/movies/${route.params.id}`,
     method: 'get',
